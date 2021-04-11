@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(53, 53, 228);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: rgb(216, 216, 51);
+    text-shadow: -2px -2px 0 rgb(241, 17, 17), 2px -2px 0 rgb(241, 17, 17), -2px 2px 0 rgb(241, 17, 17), 2px 2px 0  rgb(241, 17, 17);
+    font-size: max(4vw, 30px);
+    margin: 20px;
+}
+
+h3{
+    color:rgb(216, 216, 51);
+    font-size: max(2vw,20px);
+    width: 60vw;
+    margin: 10px 0;
+}
+
+.personagens{
+    margin: 50px 0px;
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+}
+.personagens>div{
+    margin: 0px 15px;
+}
+
+.personagens>div:hover{
+    transform: scale(1.2);
+}
+
+.personagens img{
+    margin-top: 10px;
+    width: 20vw;
+    border: 6px solid green;
+    border-radius: 10px;
+}
+
+.personagens h2{
+    font-size: max(2vw, 25px);
+    margin-bottom: 10px;
+}
+
+
+#rossi{
+    text-decoration: none;
+    color: rgb(163, 30, 30);
+}
+
+#xuxa{
+    text-decoration: none;
+    color: rgb(162, 187, 21);
+}
+
+#dog{
+    text-decoration: none;
+    color: rgb(200, 160, 28);
+}
+
+@media screen and (max-width: 700px) {
+    h3{
+        width: 80vw;
+        text-align: justify;
+    }
+
+    .personagens{
+        margin: 10px 0;
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .personagens>div{
+        margin: 20px 0;
+    }
+    .personagens img{
+        margin-top: 10px;
+        width: 70vw;
+    }
+
+}
